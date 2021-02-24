@@ -1,6 +1,7 @@
 package main
 
 import (
+	"../src/proto/pb/protobuf"
 	"bufio"
 	"encoding/hex"
 	"fmt"
@@ -10,8 +11,6 @@ import (
 	"os"
 	"strconv"
 	"time"
-
-	"../../proto/pb/protobuf"
 	"github.com/golang/protobuf/proto"
 	guuid "github.com/google/uuid"
 )
@@ -20,13 +19,13 @@ import (
 
 //NAME:Dhruv Patel
 //Student number: 43586999
-// pa1client.go
+// main.go
 
 //----------------------------------------------------------
 
 //DOCUMENTATION-------------------------------------------
 //RUN USING
-//$ go run src/client/pa1client.go <ip address> <port number> <student number>
+//$ go run src/client/main.go <ip address> <port number> <student number>
 // prints the secret key+logs
 
 //----------------------------------------------------
